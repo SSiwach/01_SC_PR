@@ -13,3 +13,10 @@ t = 0.6
 y = v0*t - 0.5*g*t**2
 
 print(y)
+
+yc = 0.2
+import math
+
+t1 = (v0 - math.sqrt(v0**2 - 2*g*yc))/g
+t2 = (v0 + math.sqrt(v0**2 - 2*g*yc))/g
+print("At t = ",t1, "and ",t2, "the height is ",yc)
